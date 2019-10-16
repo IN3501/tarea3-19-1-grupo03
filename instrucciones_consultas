@@ -1,0 +1,117 @@
+7 funcionalidades:
+1) crear usuario:
+nombre completo
+rut (ursuario)
+contraseña
+repetir contraseña
+fecha de nacimiento
+numero de telefono
+mail
+
+2) poder loogearse
+rut
+contraseña
+
+3) cliente armar la torta con las 4 opciones:
+cuando un cliente arma la torta puede escoger la cantidad de personas (entre 4 variedades) una base (entre 5 veces), relleno uno o mas de uno(entre 23) y cobertura (entre 12). 
+Entonces cuando el cliente arma su pedido este debe tener:
+- MOSTRAR un advertencia de que deben hacerse los pedidos con una semana de anticipación al menos
+- numero de orden (key)
+- cliente (rut)
+- especificaciones de que torta ordenó
+- costo que tiene para la pastelería (que no se le muestra al cliente, solo queda en la base de datos)
+- cliente debe ingresar una dirección de despacho (si así lo desea):
+region
+comuna
+calle
+numero
+depto/block
+- precio a cobrar (agregado el costo del despacho)
+- debe dar la opcion pagar (webpay)
+- se debe mostrar el resumen de la compra con la fecha de despacho
+- mostrar mail de contacto de la pasteleria por si la persona tiene alguna duda
+
+4) cliente arme el banquete, escogiendo la cantidad de productos que quiere de cada bocadillo
+la idea del servicio de banquetería está dirigido a eventos principalmente entonces cuando el cliente hace el pedido puede:
+- escoger el tipo de bocadillo (tamaño coctel) y la cantidad de unidades
+- puede escoger más de un tipo de bocadillo
+- escoger si llevan o no los bebestibles
+jugos naturales
+jugos embasados
+bebidas
+tragos (en este caso preguntar si necesitan vasos para servir los tragos)
+- puede escoger si quiere requiere que le sirvan en el evento: que la productora lleve las cosas
+mesas con mantel
+sillas
+platos
+vasos
+cubiertos
+garzones
+- si requiere ornamentación del lugar:
+girnaldas
+globos
+algun requerimiento o adorno en particular
+
+luego de que se arma el pedido completo el cliente debe:
+- MOSTRAR un advertencia de que deben hacerse los pedidos con dos semanas de anticipación al menos
+- numero de orden (key)
+- cliente (rut)
+- especificaciones del pedido
+- costo que tiene para la pastelería (que no se le muestra al cliente, solo queda en la base de datos)
+- cliente debe ingresar una dirección de despacho (si así lo desea):
+region
+comuna
+calle
+numero
+depto/block
+- precio a cobrar (agregado el costo del despacho)
+por los productos
+por la ornamentacion
+por los servicios de atención en el evento
+- debe dar la opcion pagar (webpay)
+- se debe mostrar el resumen de la compra con la fecha de despacho y/o fecha evento
+- mostrar mail de contacto de la pasteleria por si la persona tiene alguna duda
+
+
+5) fernanda (dueña) llene los costos de las recetas, como cantidad de gramos por producto y su precio en el mercado:
+formulario donde la fernanda pueda poner:
+TODO CON LA FOTO CORRESPONDIENTE
+- agregar productos variados para la opcion "armar tu torta" con sus respectivos nombres(unicos) y costos por unidad (porcion):
+- tabla de recetas:
+nombre receta (unico)
+ingredientes con su gramaje (en kilogramo)
+costo por kilo del producto (considerando que los productos se pueden repetir en distintas preparaciones)
+- tabla de bocadillos (cocteles):
+nombre del bocadillo (unico)
+ingredientes con su gramaje (en kilogramo)
+costo por kilo del producto (considerando que los productos se pueden repetir en distintas preparaciones)
+- tabla de insumos:
+nombre de los insumos (unico): ej vaso de 200ml, vaso de 500ml, copa champagne, copa vino, etc. (así con todos los articulos), servicios (tenedores, cuchillos, cucharas grandes, cucharas chicas, cucharas para servir, etc), meseros, manteles, mesas, sillas.
+costo unitario de los insumos anteriores
+
+6) cargar nuevas recetas: nombre, cuanto vale y una foto
+TODO CON LA FOTO CORRESPONDIENTE
+formulario donde fernanda pueda poner:
+- agregar productos variados para la opcion "armar tu torta" con sus respectivos nombres (unicos) y precios a cobrar por unidad (porcion):
+- tabla de recetas:
+nombre receta (unico)
+ingredientes con su gramaje (en kilogramo)
+precio a cobrar al cliente por kilo del producto (considerando que los productos se pueden repetir en distintas preparaciones)
+- tabla de bocadillos (cocteles):
+nombre del bocadillo (unico)
+ingredientes con su gramaje (en kilogramo)
+precio a cobrar al cliente por kilo del producto (considerando que los productos se pueden repetir en distintas preparaciones)
+- tabla de insumos:
+nombre de los insumos (unico): ej vaso de 200ml, vaso de 500ml, copa champagne, copa vino, etc. (así con todos los articulos), servicios (tenedores, cuchillos, cucharas grandes, cucharas chicas, cucharas para servir, etc), meseros, manteles, mesas, sillas.
+precio a cobrar al cliente unitario de los insumos anteriores
+
+
+7)PEDIDO ESPECIAL: cotización
+en caso de que una persona quiera pedir una receta que no se encuentra en el catalogo, el cliente debe ingresar:
+- cliente (rut)
+- contraseña
+- detalles de la receta: una tabla donde adjunte la receta que desea (con gramajes en kilogramos)
+- para cuantas personas es la receta
+- fecha para cuando la quiere
+AL FINAL MOSTRAR UN MENSAJE DE QUE SE ENVIÓ EL PEDIDO Y QUE EN 5 DÍAS HÁBILES TIENE RESPUESTA DE SI SE PUEDE O NO REALIZAR EL PEDIDO
+
